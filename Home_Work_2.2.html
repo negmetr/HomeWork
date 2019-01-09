@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	alert('Вас приветствует программа: "Банковский вклад 1.0"');
+	
+	var user = prompt("Пожалуйста, введите ваше имя:");
+	var sum = +prompt(user + ", введите сумму вклада:");
+	var percent = +prompt("Отлично, " + user + ", теперь введите процент, который будет начисляться ежегодно:");
+
+
+	 
+	 var percYear = ( sum / 100 ) * percent;             
+	 alert(percYear);
+
+	for (var year = 1; year < 6; year++) {
+		
+		document.write(year + ". " + parseInt(sum = sum + percYear) + "<br>");
+
+		}
+
+</script>
