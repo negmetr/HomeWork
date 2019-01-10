@@ -1,0 +1,62 @@
+<meta charset="utf-8">
+<script>
+    alert("Сыграем в загадки?"); 
+    var rOne = "Сидит дед, во сто шуб одет, кто его раздевает, тот слезы проливает.";
+    var answerOne = "лук";
+    var rTwo = "Сто одежек и все без застежек.";
+    var answerTwo = "капуста";
+    var rTree = "Идут-идут, спешат-спешат, а все не могут убежать.";
+		var answerTree = "часы";
+		var rFour = "Висит груша, нельзя скушать.";
+		var answerFour = "лампочка";
+
+		var y = "Привильно!";
+		var n = "Увы, не отгадали!";
+		var plus = " Вам добавлено ещё три загадки";
+
+		var drop = 0;
+    
+		var rightAnswers = 0;
+		
+		var userAnswer = "";
+		
+    while (drop != 1) {
+			userAnswer = prompt(rOne);
+			if(userAnswer.toLowerCase() == answerOne.toLowerCase()) {
+					alert(y);
+					rightAnswers = rightAnswers + 1;
+					break;
+			} else {
+					drop = 1;
+					alert(n + plus);
+			}
+			
+			userAnswer = prompt(rTwo);
+			if(userAnswer.toLowerCase() == answerTwo.toLowerCase()) {
+					alert(y);
+					rightAnswers = rightAnswers + 1;
+			} else {
+					alert(n);
+			}
+			
+			userAnswer = prompt(rTree);
+			if(userAnswer.toLowerCase() == answerTree.toLowerCase()) {
+					alert(y);
+					rightAnswers = rightAnswers + 1;
+			} else {
+					alert(n);
+			}
+			
+			userAnswer = prompt(rFour);
+			if(userAnswer.toLowerCase() == answerFour.toLowerCase()) {
+					alert(yes);
+					rightAnswers = rightAnswers + 1;
+			} else {
+					alert(n);
+			}
+		}
+			
+    
+    alert("Вы отгадали " + rightAnswers + " раз(а)");
+
+</script>
